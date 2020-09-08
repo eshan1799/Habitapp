@@ -1,9 +1,12 @@
 import React, { Fragment, useState, useEffect } from "react";
+import ReactModal from 'react-modal';
+import AddHabitList from '../Components/AddHabitList';
 import { toast } from "react-toastify";
-
+ReactModal.setAppElement("#root");
 
 const Dashboard = ({setAuth}) => {
   const [name, setName] = useState("");
+  let [isModalOpen, setModalOpen] = useState(false);
 
   const getName = async () => {
     try {
@@ -30,6 +33,13 @@ const Dashboard = ({setAuth}) => {
     }
   };
 
+  const openModal = () => {
+    setModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setModalOpen(false);
+  }
 
   useEffect(() => {
    getName();
@@ -39,7 +49,12 @@ const Dashboard = ({setAuth}) => {
   return (
     <Fragment>
     <h1> Hello {name} </h1>
+    <button onClick={ openModal }>Add habit</button>
 
+    <ReactModal isOpen={ isModalOpen }>
+          <AddHabitList closeModal = { closeModal } />
+    </ReactModal>
+    
     <button onClick={e => logout(e)} className="btn btn-primary">
         Logout
       </button>

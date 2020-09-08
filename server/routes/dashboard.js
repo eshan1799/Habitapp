@@ -16,4 +16,18 @@ router.get("/", authorize, async (req, res) => {
   }
 });
 
+router.post("/habits", async (req, res) => {
+  try {
+    const { id, habit, frequency } = req.body;
+    const user = await pool.query(
+      "INSERT INTO habits (user_id, habit, frequency) VALUES ($1, $2, $3)",
+      [id, habit, frequency]
+    );
+  }
+  catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 module.exports = router;
