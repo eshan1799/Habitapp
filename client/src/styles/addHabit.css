@@ -1,4 +1,4 @@
-#addHabbitContainer{
+/* #addHabbitContainer{
   width: 50%;
   height: 50%;
   margin: auto;
@@ -6,22 +6,60 @@
   margin-top: 10%;
 }
 
-#adHabbitForm {
+#addHabbitForm {
+  display: flex;
   margin-top: 10%;
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 
-#adHabbitForm input {
+#addHabbitForm input {
   width:30%;
   margin:auto;
   margin-bottom: 2%;
 }
 
-#adHabbitForm select {
+#addHabbitForm select {
   width:5%;
   margin:auto;
   margin-bottom: 2%;
 }
+
+#habitInput { 
+  display: inline-block;
+  align-self: center;
+ } */
+
+ /* #addHabitForm {
+   display: flex;
+   flex-direction: row;
+   justify-content: left;
+   align-content: left;
+ } */
+
+ .habitLabels {
+   margin: 20px 0px;
+ }
+
+ #habitInput {
+   border: solid 1px var(--lightgrey);
+ }
+
+ #habitInput:focus { border: solid 1px white; }
+
+ select {
+   display: block;
+   background-color: var(--grey);
+   color: var(--lightgrey);
+   width: 5%;
+   height: 30%;
+   border-radius: 3px;
+ }
+
+ select:hover { cursor: pointer; }
+
+ i:hover { cursor: pointer; }

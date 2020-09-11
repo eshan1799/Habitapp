@@ -57,13 +57,12 @@ class AddHabitList extends React.Component {
     render() {
         return (
             <>
-            <i onClick={ this.props.closeModal } class="far fa-window-close fa-3x modalExit"></i>
-            {/*<button onClick={ this.props.closeModal }>Close Modal</button>*/}
+            <i onClick={ this.props.closeModal } className="far fa-window-close fa-3x modalExit"></i>
             <div id="addHabbitContainer">
-            <form id='adHabbitForm' onSubmit={ this.addHabit }>
-                <label htmlFor="habit">Enter your habit:</label>
-                <input id='habitInput' name='habit' type='text' maxLength='12' required onChange={ this.handleInput } autoFocus></input>
-                <label htmlFor="frequency">How many times per week?</label>
+            <form id='addHabbitForm' onSubmit={ this.addHabit }>
+                <label className='habitLabels' htmlFor="habit">Enter your habit</label>
+                <input id='habitInput' name='habit' type='text' placeholder="Type in your habit" maxLength='12' required onChange={ this.handleInput } autoFocus></input>
+                <label className='habitLabels' htmlFor="frequency">How many times per week?</label>
                 <select name="frequency" id="habitFrequency" required onChange={ this.handleInput }>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
@@ -73,7 +72,7 @@ class AddHabitList extends React.Component {
                     <option value={6}>6</option>
                     <option value={7}>7</option>
                 </select>
-                <input type='submit'></input>
+                <input id='habitSubmit' type='submit' className='submitButtons'></input>
             </form>
             </div>
             </>

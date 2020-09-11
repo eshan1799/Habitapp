@@ -12,18 +12,16 @@
 }
 
 .addHabbitModal{
-  background-color: #121212;
+  background-color: var(--grey);
   position: absolute;
   top: 50px;
   left: 50px;
   right: 50px;
   bottom: 50px;
-  border: 1px solid rgb(204, 204, 204);
   overflow: auto;
   border-radius: 4px;
   outline: none;
-  padding: 20px;
-  text-align: center;
+  padding: 20px;  
 }
 
 .modalExit {
