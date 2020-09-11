@@ -48,6 +48,8 @@ input {
   border-radius: 2px;
 }
 
+p { color: var(--lightgrey); }
+
 label {
   font-size: 27px;
   color: var(--lightgrey);
