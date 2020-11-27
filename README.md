@@ -33,4 +33,4 @@
 
 ## Contributors
 
-[Alex Peirson](https://github.com/AKP-13), [Angus Woodman](https://github.com/Angus-Woodman), [Eshan Chatwel](https://github.com/eshan1799) & [George Olney](https://github.com/georgeo23).
+[Alex Peirson](https://github.com/AKP-13), [Angus Woodman](https://github.com/Angus-Woodman), [Eshan Chatwal](https://github.com/eshan1799) & [George Olney](https://github.com/georgeo23).
