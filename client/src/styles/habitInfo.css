@@ -1,0 +1,61 @@
+
+#habitInfoContainer{
+  /* width:70%;
+  margin: auto; */
+  height:100%;
+  /* border: white 1px solid; */
+}
+
+.calendar{
+  width:70%;
+  margin: auto;
+  background-color: var(--backgroundBlack);
+}
+
+.calendar .react-calendar__navigation button{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--desatTurq);
+  color: white;
+  border: 1px solid var(--desatTurq);
+  transition: background-color .2s;
+}
+
+.calendar .react-calendar__navigation button span{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--desatTurq);
+  color: white;
+  border: 1px solid var(--desatTurq);
+  transition: background-color .2s;
+}
+
+.calendar .react-calendar__navigation button:hover{
+  background-color: var(--grey);
+  border: 1px solid var(--desatTurq);
+  color: var(--desatTurq);
+}
+
+.calendar .react-calendar__viewContainer {
+  background-color: var(--backgroundBlack);
+  color: var(--desatTurq);
+}
+
+.calendar .react-calendar__viewContainer button{
+border: 1px solid var(--desatTurq);
+color: var(--desatTurq);
+}
+
+.calendar .react-calendar__viewContainer .react-calendar__tile--now{
+background-color: var(--desatTurq);
+color: white;
+}
+
+.calendar .react-calendar__viewContainer .react-calendar__tile--active{
+background-color: var(--saturatedTurq);
+color: var(--lightgrey);
+}
+
+
+/* .react-calendar__tile--active {
+  background-color: var(--desatTurq);
+  color: var(--backgroundBlack)
+} */

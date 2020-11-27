@@ -1,0 +1,76 @@
+#habitListContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  border: black solid 1px;
+  margin-top:10vh;
+}
+
+.gridItem {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--desatTurq);
+  color: white;
+  border: 1px solid var(--desatTurq);
+  box-sizing: border-box;
+  padding: 10px;
+  /* font-size: 100%; */
+  border: rgba(255, 255, 255) 1px solid;
+  text-align: center;
+  background-color: #028b7e;
+  border-radius: 5%;
+  /* width:30%; */
+  transition: background-color .2s;
+}
+
+.gridItem:hover {
+  background-color: var(--grey);
+  border: 1px solid var(--desatTurq);
+  color: var(--desatTurq);
+}
+
+#addHabitText {
+  margin-top: 5%;
+}
+
+.habbitListModal{
+  background-color: #121212;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1450px) {
+  #gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+
+#gridContainer,.gridItem{
+  color: black;
+}

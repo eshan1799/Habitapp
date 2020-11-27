@@ -42,7 +42,11 @@ function App() {
       <Fragment>
         <div className="container">
           <Switch>
-            <Route exact path='/' component={WelcomePage} />
+            <Route
+            exact
+            path='/'
+            render={props =>  !isAuthenticated ? (<WelcomePage/>) : (<Redirect to="/dashboard"/>)}
+            />
             <Route
               exact
               path="/login"
@@ -51,12 +55,12 @@ function App() {
             <Route
               exact
               path="/register"
-              render={props =>  !isAuthenticated ? (<Register {...props} setAuth={setAuth}/>) : (<Redirect to="/login"/>) }
+              render={props =>  !isAuthenticated ? (<Register {...props} setAuth={setAuth}/>) : (<Redirect to="/dashboard"/>) }
             />
             <Route
               exact
               path="/dashboard"
-              render={props =>  isAuthenticated ? (<Dashboard {...props} setAuth={setAuth}/>) : (<Redirect to="/login"/>) }
+              render={props =>  isAuthenticated ? (<Dashboard {...props} setAuth={setAuth}/>) : (<Redirect to="/"/>) }
             />
             <Route component={Error404} />
           </Switch>

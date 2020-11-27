@@ -1,0 +1,18 @@
+#page { padding-top: 10px; }
+
+hr {
+    border: 1px solid var(--grey);
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+#registerLine { width: 20%; }
+
+.secondHeaders {
+    margin-top: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+#loginPageForm input { width: 30% }

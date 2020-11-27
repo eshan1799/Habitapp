@@ -1,0 +1,17 @@
+.habitLabels {
+  margin: 20px 0px;
+}
+#habitInput {
+  border: solid 1px var(--lightgrey);
+}
+#habitInput:focus { border: solid 1px white; }
+select {
+  display: block;
+  background-color: var(--grey);
+  color: var(--lightgrey);
+  width: 5%;
+  height: 30%;
+  border-radius: 3px;
+}
+select:hover { cursor: pointer; }
+i:hover { cursor: pointer; }

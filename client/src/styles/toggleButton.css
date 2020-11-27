@@ -1,0 +1,12 @@
+#toggleButtonLabel input {
+  width:30px;
+  margin: auto;
+}
+
+#toggleButtonLabel label{
+  color: var(--backgroundBlack);
+}
+
+#toggleButtonLabel label:hover{
+  color: var(--desatTurq);
+}

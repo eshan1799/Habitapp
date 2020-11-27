@@ -1,4 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root {
+  --saturatedTurq: #03DAC5;
+  --desatTurq: #028b7e;
+  --backgroundBlack: #121212;
+  --grey: #292929;
+  --lightgrey: #808080;
+}
+
+#root {
+  height: 100vh;
+  background-color: var(--backgroundBlack);
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #121212;
+}
+
+h1 { font-family: 'Questrial', sans-serif; }
+
+input:focus, button:focus { 
+  outline: none;
+  border: white solid 1px;
+}
+
+a { color: var(--desatTurq); }
+
+a:hover { color: var(--desatTurq); }
+
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+input {
+  display: block;
+  background-color: var(--grey);
+  border: none;
+  font-size: 16px;
+  height: 35px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 2px;
+}
+
+label {
+  font-size: 27px;
+  color: var(--lightgrey);
+}
+
+br {
+  display: block;
+  content: "";
+  padding-top: 5px;
+}
+
+.headerLogo {
+  display: inline;
+  font-size: 400%;
+  color: var(--saturatedTurq);
+  transition: color .2s;
+}
+
+.headerLogo:hover {
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.homepageButtons {
+  font-family: 'Poppins', sans-serif;
+  padding: 9px 15px;
+  background-color: transparent;
+  color: var(--desatTurq);
+  margin: 5px 4px;
+  border: none;
+  font-size: 100%;
+  border-radius: 5px;
+  width: 100px;
+  transition: background-color 1s;
+}
+
+.homepageButtons:hover {
+  background-color: var(--desatTurq);
+  color: white;
+}
+
+.submitButtons {
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 15px;
+  background-color: var(--desatTurq);
+  color: white;
+  border: 1px solid var(--desatTurq);
+  margin: 30px 4px;
+  font-size: 100%;
+  border-radius: 5px;
+  width: 15%;
+  transition: background-color .2s;
+}
+
+.submitButtons:hover {
+  background-color: var(--grey);
+  border: 1px solid var(--desatTurq);
+  color: var(--desatTurq);
 }

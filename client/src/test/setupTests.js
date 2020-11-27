@@ -5,6 +5,9 @@ import sinon from "sinon";
 
 configure({ adapter: new Adapter() });
 
+import 'regenerator-runtime/runtime'
+
 global.React = React;
 global.shallow = shallow;
 global.sinon = sinon;
+

@@ -1,0 +1,19 @@
+#welcomePage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#homepageLogo {
+    font-family: 'Questrial', sans-serif;
+    font-size: 750%;
+    color: var(--saturatedTurq);
+    transition: color 1s ease;
+}
+
+#homepageLogo:hover {
+    color: var(--grey);
+    cursor: default;
+}

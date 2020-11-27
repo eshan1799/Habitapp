@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom"
+import '../styles/Login.css';
 
 const Login = ({setAuth}) => {
 
@@ -46,29 +47,37 @@ const { email, password } = inputs;
   };
 
   return (
-    <Fragment>
-    <h1> Login </h1>
-    <form onSubmit ={onSubmitForm}>
+    <>
+    <br />
+    <Link to='/' style={{ textDecoration: 'none' }}>
+      <h1 className='headerLogo'>Habitapp</h1>
+    </Link>
+    <hr id="loginHr" />
+    <form id='loginPageForm' onSubmit ={onSubmitForm}>
+    <label htmlFor="email">Email</label>
         <input
+          id = 'email'
           type="text"
           name="email"
           value={email}
-          placeholder="email"
+          placeholder="Type your email"
           onChange={e => onChange(e)}
-          className="form-control my-3"
+          autoFocus
+          autoComplete="off"
         />
+        <label htmlFor="password">Password</label>
         <input
+          id = 'password'
           type="password"
           name="password"
           value={password}
-          placeholder="password"
+          placeholder="Type your password"
           onChange={e => onChange(e)}
-          className="form-control my-3"
         />
-        <button className="btn btn-success btn-block">Submit</button>
+        <button className='submitButtons'>Login</button>
       </form>
-      <Link to="/register">Register</Link>
-    </Fragment>
+      <Link to="/register">Not registered? Sign up here</Link>
+    </>
   );
 };
 

@@ -1,0 +1,30 @@
+#registerForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#formSection {
+    width: 55%;
+}
+
+#formSection input { width: 55% }
+
+#formRequirements {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: left;
+}
+
+#registerSubmit { width: 26%; }
+
+#registerSubmit:hover { cursor: pointer; }
+
+ul { list-style: square; }
+
+ul div {
+    transition: color .5s;
+}
+
+ul:hover { cursor: default; }
