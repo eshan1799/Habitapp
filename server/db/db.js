@@ -7,6 +7,6 @@ const pool = new Pool({
     database: 'habitapp',
     password: process.env.password,
     port : process.env.port
-})
+});
 
 module.exports = pool;

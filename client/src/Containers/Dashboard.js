@@ -62,6 +62,13 @@ const Dashboard = ({setAuth}) => {
         setModalOpen(false);
     }
 
+  const openModal = () => {
+    setModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setModalOpen(false);
+  }
 
     useEffect(() => {
         getName();
@@ -79,8 +86,6 @@ const Dashboard = ({setAuth}) => {
                 <button id="logoutButton" className="homepageButtons" onClick={e => logout(e)} >
                     Logout
                 </button>
-
-
                 <HabitList openAddHabitModal={openModal}  habits={habits}/>
             </div>
         </Fragment>
